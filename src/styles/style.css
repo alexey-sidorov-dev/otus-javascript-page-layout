@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+.aside-right {
+  border: 1px solid magenta;
+}
+
+.aside-left {
+  border: 1px solid purple;
+}
+
+.header-top {
+  border: 1px solid red;
+}
+
+.logo {
+  content: url("../images/logo.png");
+}
+
+.main {
+  border: 1px solid blue;
+}
+
+.footer {
+  border: 1px solid green;
+}
