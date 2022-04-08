@@ -21,5 +21,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
-          ssh-key: true
-          clean: true # Automatically remove deleted files from the deploy branch

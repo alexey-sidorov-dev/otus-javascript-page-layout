@@ -4,26 +4,39 @@
   src: url("../fonts/Roboto-Bold.ttf") format("ttf");
 }
 
-.aside-right {
-  border: 1px solid magenta;
-}
-
-.aside-left {
-  border: 1px solid purple;
-}
-
-.header-top {
+.header {
+  display: flex;
   border: 1px solid red;
+}
+
+.header-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 .logo {
   content: url("../images/logo.png");
 }
 
+.content-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  border: 1px solid purple;
+}
+
 .main {
   border: 1px solid blue;
 }
 
+.aside {
+  border: 1px solid magenta;
+}
+
 .footer {
+  display: flex;
   border: 1px solid green;
 }
