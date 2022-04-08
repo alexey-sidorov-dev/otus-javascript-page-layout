@@ -4,8 +4,15 @@
   src: url("../fonts/Roboto-Bold.ttf") format("ttf");
 }
 
+/* body{display: flex;
+  align-items: center;
+flex-direction: column;} */
+
 .header {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20%;
   border: 1px solid red;
 }
 
@@ -17,26 +24,42 @@
 }
 
 .logo {
-  content: url("../images/logo.png");
+  content: url("../images/cat.svg");
+  max-width: 300px;
+  width: 100%;
 }
 
 .content-wrapper {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .sidebar {
+  width: 25%;
   border: 1px solid purple;
 }
 
 .main {
+  width: 50%;
+  height: auto;
   border: 1px solid blue;
 }
 
 .aside {
+  width: 25%;
   border: 1px solid magenta;
 }
 
 .footer {
+  height: 20%;
   display: flex;
+  justify-content: space-between;
   border: 1px solid green;
+}
+
+.footer-text {
+  margin: 2rem;
+  text-align: justify;
 }
