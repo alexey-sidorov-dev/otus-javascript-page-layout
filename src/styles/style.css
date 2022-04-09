@@ -21,7 +21,7 @@ header {
   margin: 1rem;
 }
 
-.container {
+.content-wrapper {
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -29,11 +29,21 @@ header {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 20%;
   min-height: 150px;
   background-color: lightgray;
+}
+
+.logo-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-wrapper {
+  width: auto;
 }
 
 .header-title {
@@ -51,7 +61,7 @@ header {
   width: 100%;
 }
 
-.content {
+.main-wrapper {
   width: 100%;
   height: auto;
   display: flex;

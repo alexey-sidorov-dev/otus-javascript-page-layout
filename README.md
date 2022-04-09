@@ -6,7 +6,6 @@
 
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/workflows/PR%20Sanity%20Check/badge.svg)](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://alexey-sidorov-dev.github.io/otus-javascript-page-layout)
-[![LICENSE](https://img.shields.io/badge/license-MIT-brightgreen.svg)](MIT)
 
 ## Цель
 
