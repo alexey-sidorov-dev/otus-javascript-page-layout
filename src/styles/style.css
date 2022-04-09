@@ -4,17 +4,26 @@
   src: url("../fonts/Roboto-Bold.ttf") format("ttf");
 }
 
-* {
-  border: 1px solid red;
-}
-
 a {
   font-family: Roboto, sans-serif;
   text-decoration: none;
+  text-align: justify;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  text-align: justify;
+  margin: 1rem;
+}
+
+header {
+  margin: 1rem;
 }
 
 .container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -23,8 +32,8 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 20%;
-  margin: 1rem;
-  background-color: lightyellow;
+  min-height: 150px;
+  background-color: lightgray;
 }
 
 .header-title {
@@ -42,8 +51,9 @@ a {
   width: 100%;
 }
 
-.content-wrapper {
+.content {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -51,7 +61,7 @@ a {
 .sidebar {
   width: 25%;
   margin: 0 1rem;
-  background-color: lightyellow;
+  background-color: lightgray;
 }
 
 .sidebar-nav {
@@ -67,36 +77,31 @@ a {
 
 .main {
   width: 50%;
-  height: auto;
-  background-color: lightyellow;
+  background-color: lightgray;
+}
+
+.article-text {
+  margin: 0 2rem 2rem 1rem;
 }
 
 .article-header {
   margin: 1rem;
 }
 
-.article-text {
-  margin: 0 1rem;
-}
-
 .aside {
   width: 25%;
-  background-color: lightyellow;
+  background-color: lightgray;
   margin: 0 1rem;
-}
-
-.aside-text {
-  margin: 1rem;
 }
 
 .footer {
-  height: 25%;
+  height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 1rem;
   min-height: 200px;
-  background-color: lightyellow;
+  background-color: lightgray;
 }
 
 .footer-nav {
@@ -110,9 +115,9 @@ a {
 
 .footer-text {
   width: 25%;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
 }
 
 .footer-nav > a {
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
