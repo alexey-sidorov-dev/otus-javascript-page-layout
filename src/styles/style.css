@@ -1,18 +1,17 @@
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
-  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
-}
+@import "./fonts.css";
 
 a {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, "Roboto Local", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   text-decoration: none;
   text-align: justify;
 }
 
 p {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, "Roboto Local", sans-serif;
   font-style: normal;
+  font-weight: 400;
   text-align: justify;
   margin: 1rem;
 }
@@ -47,9 +46,9 @@ header {
 }
 
 .header-title {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, "Roboto Local", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   padding: 1rem;
   text-align: center;

@@ -6,6 +6,7 @@
 
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/workflows/PR%20Sanity%20Check/badge.svg)](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://alexey-sidorov-dev.github.io/otus-javascript-page-layout)
+[![Actions Status](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/workflows/Add%20CodeSandbox%20link/badge.svg)](https://github.com/alexey-sidorov-dev/otus-javascript-page-layout/actions)
 
 ## Цель
 
@@ -31,5 +32,6 @@ HTML является неотъемлемой частью работы JS-ра
 - создан и настроен репозиторий (название, описание, actions, линтеры и тп) - 3;
 - 3 колоночный макет сверстан по дизайну - 2;
 - разметка сделана в соответствии с семантикой страницы - 2;
-- в PR доступна ссылка для просмотра страницы - 1;
-- принято ставится от 6 баллов.
+- в PR доступна ссылка для просмотра страницы - 1.
+
+Принято ставится от 6 баллов.
