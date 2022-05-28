@@ -1,0 +1,1 @@
+!function(){"use strict";document.querySelector("title").textContent="Three column page layout"}();
