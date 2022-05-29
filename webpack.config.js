@@ -32,13 +32,23 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpg|svg)$/i,
+        test: /\.(png|jpg)$/i,
         type: "asset/resource",
         generator: {
           filename: devMode
             ? "./images/[name][ext]"
             : "./images/[contenthash][ext]",
         },
+      },
+
+      {
+        test: /\.svg$/i,
+        type: "asset/inline",
+      },
+
+      {
+        test: /\.txt$/i,
+        type: "asset/source",
       },
 
       {
@@ -70,6 +80,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./index.html"),
+      favicon: path.resolve(__dirname, "./src/images/favicon.svg"),
     }),
   ].concat(
     devMode

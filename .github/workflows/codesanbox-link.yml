@@ -1,10 +1,6 @@
 name: Add CodeSandbox link
 
-on:
-  pull_request:
-    types: [opened]
-  pull_request_target:
-    types: [opened]
+on: pull_request
 
 jobs:
   codesandbox-comment:

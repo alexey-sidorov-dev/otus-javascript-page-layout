@@ -1,7 +1,7 @@
 @import "./fonts.css";
 
 a {
-  font-family: Roboto, "Roboto Local", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
@@ -9,7 +9,7 @@ a {
 }
 
 p {
-  font-family: Roboto, "Roboto Local", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: justify;
@@ -22,7 +22,6 @@ header {
 
 .content-wrapper {
   display: flex;
-  height: 100vh;
   flex-direction: column;
 }
 
@@ -46,7 +45,7 @@ header {
 }
 
 .header-title {
-  font-family: Roboto, "Roboto Local", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
