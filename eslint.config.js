@@ -17,6 +17,12 @@ module.exports = {
   plugins: ["jest"],
   rules: {
     "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: ["**/webpack.*.js", "**/index.js"],
+      },
+    ],
     "no-console": "off",
     "no-alert": "off",
     "max-len": ["error", { ignoreComments: true, code: 120 }],

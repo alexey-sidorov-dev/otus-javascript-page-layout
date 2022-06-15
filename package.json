@@ -22,7 +22,8 @@
     "url": "git+https://github.com/alexey-sidorov-dev/otus-javascript-page-layout.git"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "css"
   ],
   "author": "Alexey Sidorov",
   "license": "MIT",
@@ -53,6 +54,7 @@
     "jest": "^28.1.1",
     "lint-staged": "^13.0.1",
     "mini-css-extract-plugin": "^2.6.0",
+    "modern-css-reset": "^1.4.0",
     "prettier": "^2.7.0",
     "style-loader": "^3.3.1",
     "stylelint": "^14.9.1",
@@ -61,8 +63,5 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2"
-  },
-  "dependencies": {
-    "modern-css-reset": "^1.4.0"
   }
 }
