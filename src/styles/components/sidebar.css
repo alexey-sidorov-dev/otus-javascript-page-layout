@@ -1,0 +1,16 @@
+.sidebar {
+  width: 25%;
+  margin: 0 1rem;
+  background-color: lightgray;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sidebar-nav > a {
+  margin: 1rem;
+}

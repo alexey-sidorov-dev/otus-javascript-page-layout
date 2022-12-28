@@ -4,7 +4,9 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
-const devMode = process.env.NODE_ENV !== "production";
+const { NODE_ENV } = process.env;
+const devMode = NODE_ENV === "development";
+const prodMode = NODE_ENV === "production";
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.js"),
@@ -28,6 +30,7 @@ module.exports = {
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
+          "postcss-loader",
         ],
       },
 
@@ -82,23 +85,7 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"),
       favicon: path.resolve(__dirname, "./src/images/favicon.svg"),
     }),
-  ].concat(
-    devMode
-      ? []
-      : [
-          new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].css",
-          }),
-          new CopyWebpackPlugin({
-            patterns: [
-              {
-                from: path.resolve(__dirname, `./src/public`),
-                to: path.resolve(__dirname, "./dist"),
-              },
-            ],
-          }),
-        ]
-  ),
+  ],
 };
 
 if (devMode) {
@@ -118,7 +105,20 @@ if (devMode) {
   };
 }
 
-if (!devMode) {
+if (prodMode) {
+  module.exports.plugins?.push(
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, `./src/public`),
+          to: path.resolve(__dirname, "./dist"),
+        },
+      ],
+    })
+  );
   module.exports.devtool = false;
   module.exports.optimization = {
     minimize: true,

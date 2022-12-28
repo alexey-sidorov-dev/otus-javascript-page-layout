@@ -1,0 +1,27 @@
+.footer {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1rem;
+  min-height: 200px;
+  background-color: lightgray;
+}
+
+.footer-nav {
+  width: 25%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  width: 25%;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.footer-nav > a {
+  margin: 0.25rem;
+}
