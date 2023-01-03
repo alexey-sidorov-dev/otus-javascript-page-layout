@@ -10,7 +10,7 @@ const prodMode = NODE_ENV === "production";
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.js"),
-  mode: devMode ? "development" : "production",
+  mode: NODE_ENV,
 
   module: {
     rules: [
