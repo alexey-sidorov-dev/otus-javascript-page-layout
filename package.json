@@ -1,8 +1,8 @@
 {
   "name": "otus-javascript-page-layout",
-  "description": "OTUS JavaScript Page layout",
+  "description": "OTUS JavaScript Page Layout",
   "keywords": [
-    "javascript",
+    "layout",
     "css"
   ],
   "homepage": "https://github.com/alexey-sidorov-dev/otus-javascript-page-layout#readme",
@@ -13,13 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/alexey-sidorov-dev/otus-javascript-page-layout.git"
   },
-  "license": "MIT",
+  "license": "ISC",
   "author": "Alexey Sidorov",
   "main": "./src/index.js",
   "scripts": {
     "build": "webpack build --define-process-env-node-env production",
     "build:analyze": "webpack build --define-process-env-node-env production && webpack --analyze",
-    "build:start": "webpack serve --define-process-env-node-env development --open",
     "dev": "webpack serve --define-process-env-node-env development --open",
     "lint": "eslint .",
     "lint:all": "eslint . && stylelint **/*.css && prettier . --check",
@@ -41,7 +40,12 @@
     "@babel/core": "^7.20.7",
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
+    "@types/config": "^3.3.0",
+    "@types/eslint": "^8.4.10",
     "@types/jest": "^29.2.5",
+    "@types/jsdom": "^20.0.1",
+    "@types/node": "^18.11.18",
+    "@types/webpack": "^5.28.0",
     "babel-jest": "^29.3.1",
     "babel-loader": "^9.1.0",
     "copy-webpack-plugin": "^11.0.0",

@@ -106,6 +106,7 @@ if (devMode) {
 }
 
 if (prodMode) {
+  module.exports.devtool = false;
   module.exports.plugins?.push(
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
@@ -119,7 +120,6 @@ if (prodMode) {
       ],
     })
   );
-  module.exports.devtool = false;
   module.exports.optimization = {
     minimize: true,
     minimizer: [`...`, new CssMinimizerPlugin()],
