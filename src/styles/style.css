@@ -1,0 +1,59 @@
+@import-glob "./components/**/*.css";
+@import url("./fonts.css");
+
+a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: justify;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-wrapper {
+  width: auto;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 50%;
+  background-color: lightgray;
+}
+
+.article-text {
+  margin: 0 2rem 2rem 1rem;
+}
+
+.article-header {
+  margin: 1rem;
+}
+
+.aside {
+  width: 25%;
+  background-color: lightgray;
+  margin: 0 1rem;
+}
