@@ -82,7 +82,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/index.html"),
+      template: path.resolve(__dirname, "./public/index.html"),
       favicon: path.resolve(__dirname, "./src/images/favicon.svg"),
     }),
   ],
@@ -114,11 +114,11 @@ if (prodMode) {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, `./src/public`),
+          from: path.resolve(__dirname, "./public/robots.txt"),
           to: path.resolve(__dirname, "./dist"),
         },
       ],
-    })
+    }),
   );
   module.exports.optimization = {
     minimize: true,
