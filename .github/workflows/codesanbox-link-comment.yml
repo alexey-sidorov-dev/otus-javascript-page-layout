@@ -7,9 +7,9 @@ on:
 jobs:
   add-codesandbox-link-comment:
     name: Add CodeSandbox link comment
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: mshick/add-pr-comment@v1
+      - uses: mshick/add-pr-comment@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
