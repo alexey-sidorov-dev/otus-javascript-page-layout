@@ -3,4 +3,5 @@ module.exports = {
   errorLevel: 1,
   format: ["group"],
   peer: true,
+  reject: [/^@commitlint/],
 };
