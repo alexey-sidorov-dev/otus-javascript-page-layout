@@ -1,0 +1,27 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "eslint.experimental.useFlatConfig": true,
+  "git.autorefresh": false,
+  "git.defaultBranchName": "master",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.virtualRepositories.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "redhat.telemetry.enabled": false,
+  "typescript.autoClosingTags": true,
+  "workbench.colorTheme": "One Monokai",
+  "workbench.iconTheme": "material-icon-theme",
+  "color-highlight.matchWords": true
+}
