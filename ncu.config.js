@@ -1,6 +1,6 @@
 module.exports = {
   color: true,
-  format: ["group"],
   errorLevel: 1,
+  format: ["group"],
   peer: true,
 };
