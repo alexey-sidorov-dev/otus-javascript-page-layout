@@ -26,6 +26,7 @@
     "prepare": "husky",
     "prettier": "prettier . --check",
     "prettier:fix": "prettier . --write",
+    "serve": "webpack serve --define-process-env-node-env development --open",
     "stylelint": "stylelint **/*.css",
     "stylelint:fix": "stylelint **/*.css --fix"
   },
